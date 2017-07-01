@@ -33,6 +33,26 @@ apis:
         url: http://machine-learning.apievangelist.com/apis/curated/openapi.json
       - type: x-atom
         url: http://machine-learning.apievangelist.com/feeds/news/atom.xml
+  - name: Organizations API
+    description: This is my simple API for accessing the organizations that are part of this research.
+    image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-organization.jpg
+    humanURL: http://logging.apievangelist.com/
+    baseURL: http://logging.apievangelist.com/
+    tags:
+      - Organizations
+    properties:
+      - type: x-openapi
+        url: http://logging.apievangelist.com/apis/organizations/openapi.json
+  - name: Tools API
+    description: This is my simple API for accessing the tools that are part of this research.
+    image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-tools.png
+    humanURL: http://logging.apievangelist.com/
+    baseURL: http://logging.apievangelist.com/
+    tags:
+      - Tools
+    properties:
+      - type: x-openapi
+        url: http://logging.apievangelist.com/apis/tools/openapi.json        
 x-common:
   - type: x-support
     url: https://github.com/api-evangelist/machine-learning/issues
