@@ -36,23 +36,23 @@ apis:
   - name: Organizations API
     description: This is my simple API for accessing the organizations that are part of this research.
     image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-organization.jpg
-    humanURL: http://logging.apievangelist.com/
-    baseURL: http://logging.apievangelist.com/
+    humanURL: http://machine-learning.apievangelist.com/
+    baseURL: http://machine-learning.apievangelist.com/
     tags:
       - Organizations
     properties:
       - type: x-openapi
-        url: http://logging.apievangelist.com/apis/organizations/openapi.json
+        url: http://machine-learning.apievangelist.com/apis/organizations/openapi.json
   - name: Tools API
     description: This is my simple API for accessing the tools that are part of this research.
     image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-tools.png
-    humanURL: http://logging.apievangelist.com/
-    baseURL: http://logging.apievangelist.com/
+    humanURL: http://machine-learning.apievangelist.com/
+    baseURL: http://machine-learning.apievangelist.com/
     tags:
       - Tools
     properties:
       - type: x-openapi
-        url: http://logging.apievangelist.com/apis/tools/openapi.json        
+        url: http://machine-learning.apievangelist.com/apis/tools/openapi.json
 x-common:
   - type: x-support
     url: https://github.com/api-evangelist/machine-learning/issues
