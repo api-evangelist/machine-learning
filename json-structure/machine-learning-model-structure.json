@@ -1,0 +1,145 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/machine-learning/refs/heads/main/json-structure/machine-learning-model-structure.json",
+  "name": "Model",
+  "description": "Represents a machine learning model artifact registered in a model registry, hub, or serving platform. Captures identity, framework, task type, and deployment metadata.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier for the model, often in the form 'organization/model-name'.",
+      "example": "meta-llama/Llama-3.1-8B-Instruct"
+    },
+    "name": {
+      "type": "string",
+      "description": "Human-readable name of the model.",
+      "example": "Llama 3.1 8B Instruct"
+    },
+    "description": {
+      "type": "string",
+      "description": "Description of the model and its intended use.",
+      "example": "Instruction-tuned 8B parameter Llama 3.1 chat model from Meta."
+    },
+    "version": {
+      "type": "string",
+      "description": "Model version identifier or revision.",
+      "example": "1.0.0"
+    },
+    "provider": {
+      "type": "string",
+      "description": "Organization, hub, or platform hosting the model.",
+      "example": "Hugging Face"
+    },
+    "framework": {
+      "type": "string",
+      "enum": [
+        "pytorch",
+        "tensorflow",
+        "jax",
+        "onnx",
+        "sklearn",
+        "xgboost",
+        "lightgbm",
+        "transformers",
+        "custom"
+      ],
+      "description": "Underlying ML framework used to build the model.",
+      "example": "pytorch"
+    },
+    "task": {
+      "type": "string",
+      "enum": [
+        "text-generation",
+        "chat",
+        "embedding",
+        "text-classification",
+        "token-classification",
+        "summarization",
+        "translation",
+        "image-classification",
+        "image-generation",
+        "object-detection",
+        "speech-to-text",
+        "text-to-speech",
+        "ranking",
+        "regression",
+        "tabular-classification",
+        "other"
+      ],
+      "description": "Primary ML task the model performs.",
+      "example": "chat"
+    },
+    "modalities": {
+      "type": "array",
+      "description": "Input and output modalities supported by the model.",
+      "items": {
+        "type": "string",
+        "enum": [
+          "text",
+          "image",
+          "audio",
+          "video",
+          "tabular",
+          "embedding"
+        ]
+      },
+      "example": [
+        "text"
+      ]
+    },
+    "license": {
+      "type": "string",
+      "description": "License under which the model weights are distributed.",
+      "example": "llama-3.1-community"
+    },
+    "parameters": {
+      "type": "int64",
+      "description": "Approximate number of model parameters.",
+      "example": 8000000000
+    },
+    "context_length": {
+      "type": "int32",
+      "description": "Maximum input context length (in tokens) accepted by the model.",
+      "example": 131072
+    },
+    "endpoint_url": {
+      "type": "uri",
+      "description": "Base URL of the inference endpoint exposing this model.",
+      "example": "https://api.together.xyz/v1"
+    },
+    "registry_url": {
+      "type": "uri",
+      "description": "URL to the model's entry in a registry or hub.",
+      "example": "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct"
+    },
+    "stage": {
+      "type": "string",
+      "enum": [
+        "staging",
+        "production",
+        "archived",
+        "experimental"
+      ],
+      "description": "Lifecycle stage of the model.",
+      "example": "production"
+    },
+    "tags": {
+      "type": "array",
+      "description": "Tags categorizing this model.",
+      "items": {
+        "type": "string"
+      },
+      "example": [
+        "llm",
+        "open-source",
+        "chat"
+      ]
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "task",
+    "provider"
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "ml": "https://api-evangelist.github.io/machine-learning/schema/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "dcat": "https://www.w3.org/ns/dcat#",
+    "prov": "http://www.w3.org/ns/prov#",
+
+    "Model": "ml:Model",
+    "InferenceRequest": "ml:InferenceRequest",
+
+    "id": "@id",
+    "name": "schema:name",
+    "description": "schema:description",
+    "provider": "schema:provider",
+    "version": "schema:version",
+
+    "framework": {
+      "@id": "ml:framework",
+      "@type": "xsd:string"
+    },
+    "task": {
+      "@id": "ml:task",
+      "@type": "xsd:string"
+    },
+    "modalities": {
+      "@id": "ml:modalities",
+      "@container": "@set",
+      "@type": "xsd:string"
+    },
+    "license": {
+      "@id": "schema:license",
+      "@type": "xsd:string"
+    },
+    "parameters": {
+      "@id": "ml:parameters",
+      "@type": "xsd:long"
+    },
+    "context_length": {
+      "@id": "ml:context_length",
+      "@type": "xsd:integer"
+    },
+    "endpoint_url": {
+      "@id": "schema:url",
+      "@type": "@id"
+    },
+    "registry_url": {
+      "@id": "dcat:landingPage",
+      "@type": "@id"
+    },
+    "stage": {
+      "@id": "ml:stage",
+      "@type": "xsd:string"
+    },
+    "tags": {
+      "@id": "dcat:keyword",
+      "@container": "@set",
+      "@type": "xsd:string"
+    },
+
+    "model": {
+      "@id": "ml:model",
+      "@type": "@id"
+    },
+    "input": {
+      "@id": "ml:input"
+    },
+    "routing": {
+      "@id": "ml:routing"
+    },
+    "metadata": {
+      "@id": "ml:metadata"
+    },
+    "request_id": {
+      "@id": "ml:request_id",
+      "@type": "xsd:string"
+    },
+    "user_id": {
+      "@id": "ml:user_id",
+      "@type": "xsd:string"
+    },
+    "tenant_id": {
+      "@id": "ml:tenant_id",
+      "@type": "xsd:string"
+    },
+    "strategy": {
+      "@id": "ml:strategy",
+      "@type": "xsd:string"
+    },
+    "fallback_providers": {
+      "@id": "ml:fallback_providers",
+      "@container": "@set",
+      "@type": "xsd:string"
+    },
+    "cache_enabled": {
+      "@id": "ml:cache_enabled",
+      "@type": "xsd:boolean"
+    },
+    "temperature": {
+      "@id": "ml:temperature",
+      "@type": "xsd:double"
+    },
+    "top_p": {
+      "@id": "ml:top_p",
+      "@type": "xsd:double"
+    },
+    "max_tokens": {
+      "@id": "ml:max_tokens",
+      "@type": "xsd:integer"
+    },
+    "stop": {
+      "@id": "ml:stop",
+      "@container": "@set",
+      "@type": "xsd:string"
+    },
+    "stream": {
+      "@id": "ml:stream",
+      "@type": "xsd:boolean"
+    }
+  }
+}

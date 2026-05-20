@@ -1,0 +1,356 @@
+vocabulary: "1.0.0"
+
+info:
+  provider: Machine Learning
+  description: Vocabulary for the machine learning topic, covering model training, model registries, hosted inference, MLOps pipelines, and vector search platforms.
+  created: '2026-05-19'
+  modified: '2026-05-19'
+
+operational:
+  apis:
+    - name: Hugging Face
+      namespace: hugging-face
+      status: active
+    - name: Amazon SageMaker
+      namespace: amazon-sagemaker
+      status: active
+    - name: Google Vertex AI
+      namespace: google-vertex-ai
+      status: active
+    - name: Azure Machine Learning
+      namespace: microsoft-azure-machine-learning
+      status: active
+    - name: MLflow
+      namespace: mlflow
+      status: active
+    - name: Weights & Biases
+      namespace: weights-and-biases
+      status: active
+    - name: Kubeflow
+      namespace: kubeflow
+      status: active
+    - name: Replicate
+      namespace: replicate
+      status: active
+    - name: Together AI
+      namespace: together-ai
+      status: active
+    - name: Pinecone
+      namespace: pinecone
+      status: active
+    - name: Weaviate
+      namespace: weaviate
+      status: active
+    - name: Milvus
+      namespace: milvus
+      status: active
+
+  resources:
+    - name: models
+      description: Trained ML model artifacts available for inference or fine-tuning
+      actions:
+        - list
+        - get
+        - register
+        - deploy
+        - delete
+    - name: inference-requests
+      description: Requests submitted to model inference endpoints
+      actions:
+        - create
+        - get
+        - stream
+    - name: training-jobs
+      description: Training and fine-tuning jobs executing on managed ML infrastructure
+      actions:
+        - create
+        - get
+        - list
+        - cancel
+    - name: experiments
+      description: Tracked ML experiments with parameters, metrics, and artifacts
+      actions:
+        - create
+        - get
+        - list
+        - log
+    - name: datasets
+      description: Labeled or unlabeled datasets used for training and evaluation
+      actions:
+        - create
+        - get
+        - list
+        - upload
+    - name: pipelines
+      description: ML pipelines orchestrating data preparation, training, evaluation, and deployment
+      actions:
+        - create
+        - get
+        - list
+        - run
+    - name: endpoints
+      description: Deployed inference endpoints serving models behind HTTP or gRPC interfaces
+      actions:
+        - create
+        - get
+        - list
+        - update
+        - delete
+    - name: vectors
+      description: Embedding vectors stored in a vector database
+      actions:
+        - upsert
+        - query
+        - delete
+
+  actions:
+    - name: list
+      description: Enumerate resources
+      httpMethod: GET
+      pattern: read
+    - name: get
+      description: Retrieve a single resource
+      httpMethod: GET
+      pattern: read
+    - name: create
+      description: Create a new resource
+      httpMethod: POST
+      pattern: write
+    - name: register
+      description: Register a model version in a model registry
+      httpMethod: POST
+      pattern: write
+    - name: deploy
+      description: Deploy a model to a serving endpoint
+      httpMethod: POST
+      pattern: write
+    - name: stream
+      description: Stream tokens or events from an inference response
+      httpMethod: GET
+      pattern: read
+    - name: log
+      description: Log metrics, parameters, or artifacts to an experiment
+      httpMethod: POST
+      pattern: write
+    - name: run
+      description: Execute a pipeline or job
+      httpMethod: POST
+      pattern: write
+    - name: cancel
+      description: Cancel a running job
+      httpMethod: POST
+      pattern: write
+    - name: upload
+      description: Upload data to a dataset
+      httpMethod: POST
+      pattern: write
+    - name: upsert
+      description: Insert or update vectors in a vector index
+      httpMethod: POST
+      pattern: write
+    - name: query
+      description: Query a vector index for nearest neighbors
+      httpMethod: POST
+      pattern: query
+    - name: update
+      description: Update an existing resource
+      httpMethod: PUT
+      pattern: write
+    - name: delete
+      description: Remove a resource
+      httpMethod: DELETE
+      pattern: destructive
+
+  schemas:
+    core:
+      - name: Model
+        description: An ML model artifact registered in a hub or registry
+        properties:
+          - id
+          - name
+          - provider
+          - framework
+          - task
+          - modalities
+          - parameters
+          - context_length
+          - endpoint_url
+          - stage
+      - name: InferenceRequest
+        description: A request submitted to an inference endpoint
+        properties:
+          - model
+          - provider
+          - endpoint_url
+          - task
+          - input
+          - parameters
+          - routing
+          - metadata
+
+  enums:
+    frameworks:
+      - pytorch
+      - tensorflow
+      - jax
+      - onnx
+      - sklearn
+      - xgboost
+      - lightgbm
+      - transformers
+    tasks:
+      - text-generation
+      - chat
+      - embedding
+      - classification
+      - summarization
+      - translation
+      - image-generation
+      - object-detection
+      - speech-to-text
+      - text-to-speech
+      - vector-search
+    modalities:
+      - text
+      - image
+      - audio
+      - video
+      - tabular
+      - embedding
+    stages:
+      - staging
+      - production
+      - archived
+      - experimental
+    routing_strategies:
+      - primary
+      - fallback
+      - load-balance
+      - cost-optimized
+      - latency-optimized
+
+capability:
+  workflows:
+    - name: Hosted LLM Inference
+      description: Send chat or completion requests to a hosted foundation model via an inference API
+      apis:
+        - hugging-face
+        - together-ai
+        - replicate
+        - fireworks-ai
+        - groq
+      personas:
+        - Application Developer
+      domains:
+        - Model Serving
+    - name: Foundation Model Fine-Tuning
+      description: Launch a fine-tuning job on a foundation model using a labeled dataset
+      apis:
+        - amazon-sagemaker
+        - google-vertex-ai
+        - openpipe
+        - together-ai
+      personas:
+        - ML Engineer
+      domains:
+        - Model Training
+    - name: Experiment Tracking and Model Registry
+      description: Log experiments, register approved model versions, and promote models through staging and production
+      apis:
+        - mlflow
+        - weights-and-biases
+        - comet-ml
+        - neptune-ai
+      personas:
+        - ML Engineer
+        - Data Scientist
+      domains:
+        - MLOps
+    - name: Retrieval-Augmented Generation
+      description: Index documents in a vector database and query nearest neighbors to ground LLM responses
+      apis:
+        - pinecone
+        - weaviate
+        - milvus
+        - qdrant
+        - chroma
+      personas:
+        - Application Developer
+      domains:
+        - Vector Search
+    - name: LLM Gateway Routing
+      description: Route inference requests across multiple providers with fallback, caching, and observability
+      apis:
+        - litellm
+        - portkey
+      personas:
+        - Platform Engineer
+      domains:
+        - LLM Gateway
+
+  personas:
+    - id: ml-engineer
+      name: ML Engineer
+      description: Engineers building, training, and deploying ML models in production
+      workflows:
+        - Foundation Model Fine-Tuning
+        - Experiment Tracking and Model Registry
+    - id: data-scientist
+      name: Data Scientist
+      description: Scientists exploring data, training experimental models, and tracking results
+      workflows:
+        - Experiment Tracking and Model Registry
+    - id: application-developer
+      name: Application Developer
+      description: Developers consuming model inference and vector search APIs from applications
+      workflows:
+        - Hosted LLM Inference
+        - Retrieval-Augmented Generation
+    - id: platform-engineer
+      name: Platform Engineer
+      description: Engineers operating ML platforms, gateways, and serving infrastructure
+      workflows:
+        - LLM Gateway Routing
+
+  domains:
+    - name: Model Serving
+      description: Hosting and exposing trained models behind HTTP or gRPC inference endpoints
+    - name: Model Training
+      description: Training and fine-tuning ML models on managed infrastructure
+    - name: MLOps
+      description: Tracking, registering, deploying, and governing ML models across their lifecycle
+    - name: Vector Search
+      description: Indexing embeddings and performing nearest-neighbor search for retrieval and recommendations
+    - name: LLM Gateway
+      description: Routing, caching, and observing inference requests across multiple LLM providers
+
+crossReference:
+  - resource: models
+    operations:
+      - list
+      - get
+      - register
+      - deploy
+    workflows:
+      - Foundation Model Fine-Tuning
+      - Experiment Tracking and Model Registry
+    personas:
+      - ML Engineer
+  - resource: inference-requests
+    operations:
+      - create
+      - stream
+    workflows:
+      - Hosted LLM Inference
+      - LLM Gateway Routing
+    personas:
+      - Application Developer
+      - Platform Engineer
+  - resource: vectors
+    operations:
+      - upsert
+      - query
+    workflows:
+      - Retrieval-Augmented Generation
+    personas:
+      - Application Developer

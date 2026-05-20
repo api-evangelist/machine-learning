@@ -1,0 +1,17 @@
+{
+  "id": "meta-llama/Llama-3.1-8B-Instruct",
+  "name": "Llama 3.1 8B Instruct",
+  "description": "Instruction-tuned 8B parameter Llama 3.1 chat model from Meta, suitable for general-purpose chat and assistant applications.",
+  "version": "1.0.0",
+  "provider": "Hugging Face",
+  "framework": "pytorch",
+  "task": "chat",
+  "modalities": ["text"],
+  "license": "llama-3.1-community",
+  "parameters": 8030000000,
+  "context_length": 131072,
+  "endpoint_url": "https://api.together.xyz/v1",
+  "registry_url": "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct",
+  "stage": "production",
+  "tags": ["llm", "open-source", "chat", "instruct"]
+}

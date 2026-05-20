@@ -1,0 +1,124 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/machine-learning/refs/heads/main/json-schema/machine-learning-inference-request-schema.json",
+  "title": "InferenceRequest",
+  "description": "A request submitted to a model inference endpoint, capturing the target model, input payload, sampling parameters, and routing metadata used by serving platforms and LLM gateways.",
+  "type": "object",
+  "properties": {
+    "model": {
+      "type": "string",
+      "description": "Identifier of the model to invoke for this inference request.",
+      "example": "meta-llama/Llama-3.1-8B-Instruct"
+    },
+    "provider": {
+      "type": "string",
+      "description": "Name of the inference provider or platform the request is routed to.",
+      "example": "together-ai"
+    },
+    "endpoint_url": {
+      "type": "string",
+      "format": "uri",
+      "description": "Full URL of the inference endpoint receiving the request.",
+      "example": "https://api.together.xyz/v1/chat/completions"
+    },
+    "task": {
+      "type": "string",
+      "description": "Type of inference task being requested.",
+      "enum": [
+        "chat",
+        "completion",
+        "embedding",
+        "classification",
+        "image-generation",
+        "speech-to-text",
+        "text-to-speech",
+        "rerank",
+        "vector-search",
+        "other"
+      ],
+      "example": "chat"
+    },
+    "input": {
+      "description": "Input payload for the model. Shape depends on the task type (messages array for chat, string for embedding, image data for vision, etc.).",
+      "example": [
+        { "role": "user", "content": "Summarize the API Evangelist network." }
+      ]
+    },
+    "parameters": {
+      "type": "object",
+      "description": "Sampling and decoding parameters.",
+      "properties": {
+        "temperature": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 2,
+          "description": "Sampling temperature.",
+          "example": 0.7
+        },
+        "top_p": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Top-p (nucleus) sampling parameter.",
+          "example": 0.9
+        },
+        "max_tokens": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Maximum number of tokens to generate.",
+          "example": 512
+        },
+        "stop": {
+          "type": "array",
+          "description": "Stop sequences that halt generation.",
+          "items": { "type": "string" },
+          "example": ["\n\nUser:"]
+        },
+        "stream": {
+          "type": "boolean",
+          "description": "Whether to stream the response token-by-token.",
+          "example": true
+        }
+      }
+    },
+    "routing": {
+      "type": "object",
+      "description": "LLM gateway routing metadata describing fallback, caching, and provider selection policy.",
+      "properties": {
+        "strategy": {
+          "type": "string",
+          "enum": ["primary", "fallback", "load-balance", "cost-optimized", "latency-optimized"],
+          "example": "fallback"
+        },
+        "fallback_providers": {
+          "type": "array",
+          "items": { "type": "string" },
+          "example": ["fireworks-ai", "replicate"]
+        },
+        "cache_enabled": {
+          "type": "boolean",
+          "example": true
+        }
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "description": "Caller-supplied metadata for observability and cost attribution.",
+      "properties": {
+        "request_id": {
+          "type": "string",
+          "example": "req_01HZX9F7C9A1B2D3E4F5G6H7J8"
+        },
+        "user_id": {
+          "type": "string",
+          "example": "user_42"
+        },
+        "tenant_id": {
+          "type": "string",
+          "example": "tenant_acme"
+        }
+      }
+    }
+  },
+  "required": ["model", "task", "input"]
+}

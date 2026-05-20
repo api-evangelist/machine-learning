@@ -1,0 +1,27 @@
+{
+  "model": "meta-llama/Llama-3.1-8B-Instruct",
+  "provider": "together-ai",
+  "endpoint_url": "https://api.together.xyz/v1/chat/completions",
+  "task": "chat",
+  "input": [
+    { "role": "system", "content": "You are a helpful assistant that summarizes API ecosystems." },
+    { "role": "user", "content": "Summarize the API Evangelist machine learning network in two sentences." }
+  ],
+  "parameters": {
+    "temperature": 0.7,
+    "top_p": 0.9,
+    "max_tokens": 512,
+    "stop": ["\n\nUser:"],
+    "stream": true
+  },
+  "routing": {
+    "strategy": "fallback",
+    "fallback_providers": ["fireworks-ai", "replicate"],
+    "cache_enabled": true
+  },
+  "metadata": {
+    "request_id": "req_01HZX9F7C9A1B2D3E4F5G6H7J8",
+    "user_id": "user_42",
+    "tenant_id": "tenant_acme"
+  }
+}
