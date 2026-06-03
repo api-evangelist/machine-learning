@@ -1,0 +1,260 @@
+meta:
+  name: Machine Learning
+  description: An index and topic collection covering machine learning APIs, MLOps
+    platforms, model serving infrastructure, and inference providers. Machine learning
+    APIs span the full ML lifecycle — from data labeling, experiment tracking, and
+    model training to model registries, hosted inference, and vector search. This
+    collection brings together hyperscaler ML platforms (Amazon SageMaker, Google
+    Vertex AI, Azure Machine Learning), open-source MLOps frameworks (MLflow, Kubeflow,
+    ZenML, DVC), GPU inference providers (Together AI, Fireworks AI, Replicate, Groq,
+    Modal, Baseten), vector databases (Pinecone, Weaviate, Milvus, Qdrant, Chroma),
+    and model hubs (Hugging Face) that together power production machine learning
+    at scale.
+  tags:
+  - Machine Learning
+  - MLOps
+  - Model Serving
+  - Inference
+  - AutoML
+  - Embeddings
+  - Vector Database
+  - Foundation Models
+  portal: https://apievangelist.com
+  github: https://github.com/api-evangelist
+  repo: machine-learning
+services_tools:
+- name: Amazon SageMaker
+  repo: https://github.com/api-evangelist/amazon-sagemaker
+  apisio: https://providers.apis.io/providers/amazon-sagemaker/
+- name: Anyscale
+  repo: https://github.com/api-evangelist/anyscale
+  apisio: https://providers.apis.io/providers/anyscale/
+- name: Azure Databricks
+  repo: https://github.com/api-evangelist/azure-databricks
+  apisio: https://providers.apis.io/providers/azure-databricks/
+- name: Azure Machine Learning
+  repo: https://github.com/api-evangelist/microsoft-azure-machine-learning
+  apisio: https://providers.apis.io/providers/microsoft-azure-machine-learning/
+- name: Baseten
+  repo: https://github.com/api-evangelist/baseten
+  apisio: https://providers.apis.io/providers/baseten/
+- name: ClearML
+  repo: https://github.com/api-evangelist/clearml
+  apisio: https://providers.apis.io/providers/clearml/
+- name: Chroma
+  repo: https://github.com/api-evangelist/chroma
+  apisio: https://providers.apis.io/providers/chroma/
+- name: Comet
+  repo: https://github.com/api-evangelist/comet-ml
+  apisio: https://providers.apis.io/providers/comet-ml/
+- name: DagsHub
+  repo: https://github.com/api-evangelist/dagshub
+  apisio: https://providers.apis.io/providers/dagshub/
+- name: Databricks
+  repo: https://github.com/api-evangelist/databricks
+  apisio: https://providers.apis.io/providers/databricks/
+- name: Dataiku
+  repo: https://github.com/api-evangelist/dataiku
+  apisio: https://providers.apis.io/providers/dataiku/
+- name: DeepInfra
+  repo: https://github.com/api-evangelist/deepinfra
+  apisio: https://providers.apis.io/providers/deepinfra/
+- name: Determined AI
+  repo: https://github.com/api-evangelist/determined-ai
+  apisio: https://providers.apis.io/providers/determined-ai/
+- name: DVC
+  repo: https://github.com/api-evangelist/dvc
+  apisio: https://providers.apis.io/providers/dvc/
+- name: Fireworks AI
+  repo: https://github.com/api-evangelist/fireworks-ai
+  apisio: https://providers.apis.io/providers/fireworks-ai/
+- name: Google Vertex AI
+  repo: https://github.com/api-evangelist/google-vertex-ai
+  apisio: https://providers.apis.io/providers/google-vertex-ai/
+- name: Groq
+  repo: https://github.com/api-evangelist/groq
+  apisio: https://providers.apis.io/providers/groq/
+- name: Hugging Face
+  repo: https://github.com/api-evangelist/hugging-face
+  apisio: https://providers.apis.io/providers/hugging-face/
+- name: Hyperbolic
+  repo: https://github.com/api-evangelist/hyperbolic
+  apisio: https://providers.apis.io/providers/hyperbolic/
+- name: Jina AI
+  repo: https://github.com/api-evangelist/jina-ai
+  apisio: https://providers.apis.io/providers/jina-ai/
+- name: KServe
+  repo: https://github.com/api-evangelist/kserve
+  apisio: https://providers.apis.io/providers/kserve/
+- name: Kubeflow
+  repo: https://github.com/api-evangelist/kubeflow
+  apisio: https://providers.apis.io/providers/kubeflow/
+- name: Label Studio
+  repo: https://github.com/api-evangelist/label-studio
+  apisio: https://providers.apis.io/providers/label-studio/
+- name: Lepton AI
+  repo: https://github.com/api-evangelist/lepton-ai
+  apisio: https://providers.apis.io/providers/lepton-ai/
+- name: LiteLLM
+  repo: https://github.com/api-evangelist/litellm
+  apisio: https://providers.apis.io/providers/litellm/
+- name: Marqo
+  repo: https://github.com/api-evangelist/marqo
+  apisio: https://providers.apis.io/providers/marqo/
+- name: Microsoft Azure AI Foundry
+  repo: https://github.com/api-evangelist/azure-ai-foundry
+  apisio: https://providers.apis.io/providers/azure-ai-foundry/
+- name: Milvus
+  repo: https://github.com/api-evangelist/milvus
+  apisio: https://providers.apis.io/providers/milvus/
+- name: MLflow
+  repo: https://github.com/api-evangelist/mlflow
+  apisio: https://providers.apis.io/providers/mlflow/
+- name: Modal
+  repo: https://github.com/api-evangelist/modal
+  apisio: https://providers.apis.io/providers/modal/
+- name: Neptune.ai
+  repo: https://github.com/api-evangelist/neptune-ai
+  apisio: https://providers.apis.io/providers/neptune-ai/
+- name: Novita AI
+  repo: https://github.com/api-evangelist/novita-ai
+  apisio: https://providers.apis.io/providers/novita-ai/
+- name: OpenPipe
+  repo: https://github.com/api-evangelist/openpipe
+  apisio: https://providers.apis.io/providers/openpipe/
+- name: Pinecone
+  repo: https://github.com/api-evangelist/pinecone
+  apisio: https://providers.apis.io/providers/pinecone/
+- name: Portkey
+  repo: https://github.com/api-evangelist/portkey
+  apisio: https://providers.apis.io/providers/portkey/
+- name: Qdrant
+  repo: https://github.com/api-evangelist/qdrant
+  apisio: https://providers.apis.io/providers/qdrant/
+- name: Ray
+  repo: https://github.com/api-evangelist/ray
+  apisio: https://providers.apis.io/providers/ray/
+- name: Replicate
+  repo: https://github.com/api-evangelist/replicate
+  apisio: https://providers.apis.io/providers/replicate/
+- name: SiliconFlow
+  repo: https://github.com/api-evangelist/siliconflow
+  apisio: https://providers.apis.io/providers/siliconflow/
+- name: Together AI
+  repo: https://github.com/api-evangelist/together-ai
+  apisio: https://providers.apis.io/providers/together-ai/
+- name: TrueFoundry
+  repo: https://github.com/api-evangelist/truefoundry
+  apisio: https://providers.apis.io/providers/truefoundry/
+- name: Typesense
+  repo: https://github.com/api-evangelist/typesense
+  apisio: https://providers.apis.io/providers/typesense/
+- name: Vespa
+  repo: https://github.com/api-evangelist/vespa
+  apisio: https://providers.apis.io/providers/vespa/
+- name: vLLM
+  repo: https://github.com/api-evangelist/vllm
+  apisio: https://providers.apis.io/providers/vllm/
+- name: Weaviate
+  repo: https://github.com/api-evangelist/weaviate
+  apisio: https://providers.apis.io/providers/weaviate/
+- name: Weights & Biases
+  repo: https://github.com/api-evangelist/weights-and-biases
+  apisio: https://providers.apis.io/providers/weights-and-biases/
+- name: ZenML
+  repo: https://github.com/api-evangelist/zenml
+  apisio: https://providers.apis.io/providers/zenml/
+- name: Zilliz
+  repo: https://github.com/api-evangelist/zilliz
+  apisio: https://providers.apis.io/providers/zilliz/
+features:
+- name: Hosted Model Inference
+  description: ML APIs from providers like Hugging Face, Replicate, Together AI, Fireworks
+    AI, and Groq expose pre-trained and fine-tuned models behind HTTP endpoints so
+    developers can call inference without managing GPUs.
+- name: Model Training and Fine-Tuning
+  description: Platforms like Amazon SageMaker, Google Vertex AI, Azure Machine Learning,
+    and OpenPipe expose APIs for launching training jobs, configuring hyperparameters,
+    and fine-tuning foundation models on custom data.
+- name: Experiment Tracking and Model Registry
+  description: MLflow, Weights & Biases, Comet, Neptune.ai, and ClearML provide APIs
+    to log experiments, track metrics, compare runs, and register approved model versions
+    for downstream deployment.
+- name: Vector Search and Embeddings
+  description: Vector databases like Pinecone, Weaviate, Milvus, Qdrant, and Chroma
+    expose APIs to index embeddings and run nearest-neighbor search powering retrieval-augmented
+    generation and semantic search.
+- name: Model Serving and Deployment
+  description: Serving frameworks like KServe, vLLM, Ray Serve, Baseten, and TrueFoundry
+    provide APIs to deploy models as scalable HTTP or gRPC endpoints with autoscaling,
+    batching, and routing.
+- name: ML Pipeline Orchestration
+  description: Kubeflow Pipelines, ZenML, and DVC expose APIs to define, version,
+    and execute ML pipelines spanning data preparation, training, evaluation, and
+    deployment stages.
+- name: Data Labeling and Annotation
+  description: Label Studio and similar platforms expose APIs for managing labeling
+    projects, importing data, assigning tasks to annotators, and exporting labeled
+    datasets for model training.
+- name: LLM Gateway and Routing
+  description: LiteLLM, Portkey, and similar gateways provide unified APIs that route
+    requests across multiple LLM providers with fallback, caching, rate limiting,
+    and observability.
+use_cases:
+- name: Retrieval-Augmented Generation
+  description: Combining a vector database (Pinecone, Weaviate, Qdrant) with an embeddings
+    API and an LLM inference endpoint to ground model responses in private knowledge
+    bases.
+- name: Fine-Tuning Foundation Models
+  description: Using SageMaker, Vertex AI, OpenPipe, or Together AI APIs to fine-tune
+    open foundation models on proprietary datasets and deploy the resulting model
+    behind a managed inference endpoint.
+- name: Scalable Model Inference at the Edge
+  description: Deploying optimized models through Groq, Modal, Replicate, or Baseten
+    to serve high-throughput, low-latency inference for chatbots, recommendation systems,
+    and content generation.
+- name: End-to-End MLOps Automation
+  description: Using Kubeflow, MLflow, Weights & Biases, and ZenML to track experiments,
+    register approved models, trigger retraining, and promote models to production
+    via API.
+- name: Multimodal Application Development
+  description: Composing image, audio, video, and text models from Hugging Face, Replicate,
+    and Fireworks AI through standard inference APIs to build multimodal user experiences.
+- name: Semantic Search and Recommendations
+  description: Indexing product catalogs, documents, or media in vector databases
+    like Milvus or Vespa and exposing semantic search APIs to power discovery and
+    personalization.
+- name: Model Observability and Cost Control
+  description: Using gateways like Portkey and LiteLLM alongside observability platforms
+    to monitor inference latency, cost-per-request, and routing decisions across multiple
+    model providers.
+- name: Distributed Training at Scale
+  description: Running large-scale distributed training jobs on Ray, Anyscale, Determined
+    AI, or Databricks via API, including hyperparameter tuning and GPU cluster orchestration.
+integrations:
+- name: Hugging Face
+  description: Model hub and inference API hosting hundreds of thousands of open-source
+    transformer models, datasets, and Spaces with managed Inference Endpoints.
+- name: Amazon SageMaker
+  description: End-to-end ML platform on AWS for building, training, deploying, and
+    monitoring models, including SageMaker Studio, JumpStart foundation models, and
+    managed endpoints.
+- name: Google Vertex AI
+  description: Unified ML platform on Google Cloud covering AutoML, custom training,
+    Model Registry, Pipelines, and Generative AI Studio for foundation models like
+    Gemini.
+- name: MLflow
+  description: Open-source platform for ML lifecycle management with APIs for experiment
+    tracking, model registry, and deployment across many backends.
+- name: Weights & Biases
+  description: Experiment tracking, evaluations, model registry, and LLM observability
+    platform with rich APIs for logging metrics and managing models.
+- name: Replicate
+  description: API platform for running open-source models in the cloud with simple
+    per-second pricing and one-line deployment of custom Cog containers.
+- name: Together AI
+  description: Inference and fine-tuning platform for open foundation models, exposing
+    OpenAI-compatible APIs for chat, completion, and embeddings.
+- name: Pinecone
+  description: Managed vector database for high-scale similarity search, hybrid search,
+    and metadata filtering powering production RAG applications.
