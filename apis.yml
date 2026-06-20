@@ -6,7 +6,7 @@ description: >-
   Kubeflow, ZenML, DVC), GPU inference providers (Together AI, Fireworks AI, Replicate, Groq, Modal, Baseten), vector databases (Pinecone, Weaviate, Milvus, Qdrant, Chroma), and model hubs (Hugging Face) that together power
   production machine learning at scale.
 type: Index
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
 - Machine Learning
 - MLOps
