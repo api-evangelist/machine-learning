@@ -1,0 +1,16 @@
+related:
+- name: Database
+  url: https://database.apievangelist.com
+  icon: https://database.apievangelist.com/icon.png
+  description: An index and topic collection covering managed databases and database-as-a-service offerings
+    exposing APIs. Database APIs enable developers to provision, configure, query,…
+- name: Migration
+  url: https://migration.apievangelist.com
+  icon: https://migration.apievangelist.com/icon.png
+  description: An index and topic collection covering data migration, cloud migration, database migration,
+    and API migration platforms and services. Migration platforms help organizations move…
+- name: Caching
+  url: https://caching.apievangelist.com
+  icon: https://caching.apievangelist.com/icon.png
+  description: An index and topic collection covering API-accessible caching services, in-memory data
+    stores, key-value caches, and edge/CDN cache APIs. Caching reduces latency, lowers backend…
