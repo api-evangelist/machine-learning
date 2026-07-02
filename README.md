@@ -3,8 +3,6 @@ An index and topic collection covering machine learning APIs, MLOps platforms, m
 
 **URL:** [https://apievangelist.com](https://apievangelist.com)
 
-**Run:** [Capabilities Using Naftiko](https://github.com/naftiko/fleet?utm_source=api-evangelist&utm_medium=readme&utm_campaign=company-api-evangelist&utm_content=repo)
-
 ## Tags:
 
  - Machine Learning, MLOps, Model Serving, Inference, AutoML, Embeddings, Vector Database, Foundation Models
