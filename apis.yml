@@ -1,5 +1,6 @@
 aid: machine-learning
 name: Machine Learning
+kind: topic
 description: >-
   An index and topic collection covering machine learning APIs, MLOps platforms, model serving infrastructure, and inference providers. Machine learning APIs span the full ML lifecycle — from data labeling, experiment tracking,
   and model training to model registries, hosted inference, and vector search. This collection brings together hyperscaler ML platforms (Amazon SageMaker, Google Vertex AI, Azure Machine Learning), open-source MLOps frameworks (MLflow,
