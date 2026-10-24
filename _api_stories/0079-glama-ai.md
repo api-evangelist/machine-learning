@@ -1,8 +1,8 @@
 ---
-title: 'Accelerating Cloud App Development: Render''s Implementation of the Model
-  Context Protocol (MCP)'
-link: https://glama.ai/blog/2025-10-25-accelerating-cloud-app-development-renders-implementation-of-the-model-context-protocol-mcp
-published: '2025-10-25'
+title: 'Engineering Enterprise-Grade Context: Making the Model Context Protocol (MCP)
+  Viable for Financial Services'
+link: https://glama.ai/blog/2025-11-06-engineering-enterprise-grade-context-making-the-model-context-protocol-mcp-viable-for-financial-services
+published: '2025-11-06'
 provider: glama-ai
 repo: https://github.com/api-evangelist/glama-ai
 domain: glama.ai
