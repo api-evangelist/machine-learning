@@ -1,142 +1,97 @@
-# Machine Learning (machine-learning)
+# Machine Learning
+
+<!-- API-EVANGELIST-PROVENANCE:BEGIN -->
+> ### About this repository
+>
+> **This is not our API.** This repository is an independent, third-party profile of a company's
+> **publicly available** API surface, maintained by [API Evangelist](https://apievangelist.com).
+> API Evangelist does not operate, host, resell, or support this company's APIs, and is not
+> affiliated with or endorsed by the company unless stated on the profile.
+>
+> **Where the information came from.** Everything here is assembled from material a member of the
+> public can reach with a browser and no credentials — the company's own website, developer portal
+> and documentation, the specifications it publishes for public use (OpenAPI, AsyncAPI, JSON Schema,
+> `apis.json`, `llms.txt` and similar), its public repositories, and its public status, pricing and
+> changelog pages. **Nothing here is obtained by breaching a system, defeating an access control, or
+> using credentials of any kind.**
+>
+> **The rating is an independent assessment.** The Kin Score and Agent Readiness rating are
+> independently calculated scores of a company's *public* API artifacts, produced by API Evangelist
+> against a published rubric. They are not certifications, endorsements, security assessments, or
+> audits, and they score published artifacts — not the quality, safety, or security of the software.
+>
+> **Corrections, re-scores, and removal are free.** No partnership, contract, or purchase is
+> required, and you do not need to justify the request.
+>
+> - **Something wrong?** Open an issue on this repository, or email
+>   [info@apievangelist.com](mailto:info@apievangelist.com).
+> - **Published something new?** Ask for a re-score and we will re-run the rating.
+> - **Want the listing taken down?** Say so and we will honor it. The profile is reduced to your
+>   company name, a factual description, and a link to your own site, and the company is recorded as
+>   **unrated** — never scored zero for having asked.
+>
+> **Response times.** Acknowledgement within **one business day**; removal or restriction within
+> **two business days**; corrections and re-scores within **five business days**.
+>
+> **Not from the company, and here with a question?** You are welcome here — we would rather be the
+> front line and point you the right way than have a good report go nowhere. What this repository
+> can answer is narrow, though, so it is worth knowing who you are actually looking for:
+>
+> - **A question about how the API works, an account, billing, or a bug in the service** — that is
+>   the company's own support, not us. We profile this API; we do not operate it and cannot see
+>   your account.
+> - **A bug in an open-source project we only catalog** — file it on that project's own repository.
+>   This has happened with a real and correct bug report that reached us instead of the people who
+>   could fix it, which helped nobody.
+> - **Anything about this listing itself** — the description, the tags, the rating, a missing or
+>   wrong artifact — is ours. Open an issue here.
+> - **Not sure, or something general about API Evangelist or APIs.io** — open an issue on the
+>   [APIs.io Inbox](https://github.com/api-search/inbox) and we will route it.
+>
+> **This repository contains no software, and we will never ask you to download anything.** There is
+> no build, release, installer, or binary here — only text and machine-readable API descriptions, so
+> there is nothing here that can be "corrupt" or need "repairing". Any issue, comment, or email
+> claiming otherwise and offering a download link is not from us and is hostile. Do not follow the
+> link; it is a lure. Report it to GitHub and, if you like, tell us at
+> [info@apievangelist.com](mailto:info@apievangelist.com) so we can take it down.
+>
+> **On a security or compliance team?** Email
+> [info@apievangelist.com](mailto:info@apievangelist.com) with *security* in the subject line and
+> you will get a person, not a form. We will tell you exactly which public URLs this profile was
+> built from so your team can see the same surface we did, and we will take the listing down on
+> request while you work through it.
+>
+> Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
+<!-- API-EVANGELIST-PROVENANCE:END -->
+
 An index and topic collection covering machine learning APIs, MLOps platforms, model serving infrastructure, and inference providers. Machine learning APIs span the full ML lifecycle — from data labeling, experiment tracking, and model training to model registries, hosted inference, and vector search. This collection brings together hyperscaler ML platforms (Amazon SageMaker, Google Vertex AI, Azure Machine Learning), open-source MLOps frameworks (MLflow, Kubeflow, ZenML, DVC), GPU inference providers (Together AI, Fireworks AI, Replicate, Groq, Modal, Baseten), vector databases (Pinecone, Weaviate, Milvus, Qdrant, Chroma), and model hubs (Hugging Face) that together power production machine learning at scale.
 
-**URL:** [https://apievangelist.com](https://apievangelist.com)
+**Areas:** Machine Learning · MLOps · Model Serving · Inference · AutoML · Embeddings · Vector Database · Foundation Models
 
-## Tags:
+## Machine Learning on APIs.io
 
- - Machine Learning, MLOps, Model Serving, Inference, AutoML, Embeddings, Vector Database, Foundation Models
+Everything profiled for Machine Learning is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/machine-learning/](https://apis.io/providers/machine-learning/)** — or go straight to one of the APIs or properties below.
 
-## Timestamps
+## Where to find this API
 
-- **Created:** 2026-05-19
-- **Modified:** 2026-05-19
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
-## Common Properties
+- [GitHub](https://github.com/api-evangelist)
 
-- [Portal](https://apievangelist.com)
-- [GitHubOrganization](https://github.com/api-evangelist)
-- [JSONSchema - Model Schema](https://raw.githubusercontent.com/api-evangelist/machine-learning/refs/heads/main/json-schema/machine-learning-model-schema.json)
-- [JSONSchema - Inference Request Schema](https://raw.githubusercontent.com/api-evangelist/machine-learning/refs/heads/main/json-schema/machine-learning-inference-request-schema.json)
-- [JSON-LD](https://raw.githubusercontent.com/api-evangelist/machine-learning/refs/heads/main/json-ld/machine-learning-context.jsonld)
-- [Vocabulary](https://raw.githubusercontent.com/api-evangelist/machine-learning/refs/heads/main/vocabulary/machine-learning-vocabulary.yaml)
+## API Evangelist rating
 
-## Features
+**Unrated** — no public website could be reached for this company, so there was almost nothing to measure and nothing a reader could check.
 
-| Name | Description |
-|------|-------------|
-| Hosted Model Inference | ML APIs from providers like Hugging Face, Replicate, Together AI, Fireworks AI, and Groq expose pre-trained and fine-tuned models behind HTTP endpoints so developers can call inference without managing GPUs. |
-| Model Training and Fine-Tuning | Platforms like Amazon SageMaker, Google Vertex AI, Azure Machine Learning, and OpenPipe expose APIs for launching training jobs, configuring hyperparameters, and fine-tuning foundation models on custom data. |
-| Experiment Tracking and Model Registry | MLflow, Weights & Biases, Comet, Neptune.ai, and ClearML provide APIs to log experiments, track metrics, compare runs, and register approved model versions for downstream deployment. |
-| Vector Search and Embeddings | Vector databases like Pinecone, Weaviate, Milvus, Qdrant, and Chroma expose APIs to index embeddings and run nearest-neighbor search powering retrieval-augmented generation and semantic search. |
-| Model Serving and Deployment | Serving frameworks like KServe, vLLM, Ray Serve, Baseten, and TrueFoundry provide APIs to deploy models as scalable HTTP or gRPC endpoints with autoscaling, batching, and routing. |
-| ML Pipeline Orchestration | Kubeflow Pipelines, ZenML, and DVC expose APIs to define, version, and execute ML pipelines spanning data preparation, training, evaluation, and deployment stages. |
-| Data Labeling and Annotation | Label Studio and similar platforms expose APIs for managing labeling projects, importing data, assigning tasks to annotators, and exporting labeled datasets for model training. |
-| LLM Gateway and Routing | LiteLLM, Portkey, and similar gateways provide unified APIs that route requests across multiple LLM providers with fallback, caching, rate limiting, and observability. |
+This is not a score of zero. No rating is published for this company. If that is wrong because something public exists that we missed, say so on this repository or email [info@apievangelist.com](mailto:info@apievangelist.com) and it will be re-run — free, and no justification needed.
 
-## Use Cases
+## How this profile is made
 
-| Name | Description |
-|------|-------------|
-| Retrieval-Augmented Generation | Combining a vector database with an embeddings API and an LLM inference endpoint to ground model responses in private knowledge bases. |
-| Fine-Tuning Foundation Models | Using SageMaker, Vertex AI, OpenPipe, or Together AI APIs to fine-tune open foundation models on proprietary datasets and deploy behind a managed inference endpoint. |
-| Scalable Model Inference at the Edge | Deploying optimized models through Groq, Modal, Replicate, or Baseten to serve high-throughput, low-latency inference for chatbots and recommendation systems. |
-| End-to-End MLOps Automation | Using Kubeflow, MLflow, Weights & Biases, and ZenML to track experiments, register approved models, trigger retraining, and promote models to production via API. |
-| Multimodal Application Development | Composing image, audio, video, and text models from Hugging Face, Replicate, and Fireworks AI through standard inference APIs to build multimodal user experiences. |
-| Semantic Search and Recommendations | Indexing product catalogs, documents, or media in vector databases like Milvus or Vespa and exposing semantic search APIs to power discovery and personalization. |
-| Model Observability and Cost Control | Using gateways like Portkey and LiteLLM alongside observability platforms to monitor inference latency, cost-per-request, and routing across model providers. |
-| Distributed Training at Scale | Running large-scale distributed training jobs on Ray, Anyscale, Determined AI, or Databricks via API, including hyperparameter tuning and GPU cluster orchestration. |
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
 
-## Integrations
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Machine Learning: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
 
-| Name | Description |
-|------|-------------|
-| Hugging Face | Model hub and inference API hosting hundreds of thousands of open-source transformer models, datasets, and Spaces with managed Inference Endpoints. |
-| Amazon SageMaker | End-to-end ML platform on AWS for building, training, deploying, and monitoring models, including SageMaker Studio, JumpStart, and managed endpoints. |
-| Google Vertex AI | Unified ML platform on Google Cloud covering AutoML, custom training, Model Registry, Pipelines, and Generative AI Studio. |
-| MLflow | Open-source platform for ML lifecycle management with APIs for experiment tracking, model registry, and deployment across many backends. |
-| Weights & Biases | Experiment tracking, evaluations, model registry, and LLM observability platform with rich APIs for logging metrics and managing models. |
-| Replicate | API platform for running open-source models in the cloud with per-second pricing and one-line deployment of custom Cog containers. |
-| Together AI | Inference and fine-tuning platform for open foundation models, exposing OpenAI-compatible APIs for chat, completion, and embeddings. |
-| Pinecone | Managed vector database for high-scale similarity search, hybrid search, and metadata filtering powering production RAG applications. |
+## Open an issue
 
-## Artifacts
-
-Machine-readable API specifications organized by format.
-
-### JSON Schema
-
-- [Model Schema](json-schema/machine-learning-model-schema.json)
-- [Inference Request Schema](json-schema/machine-learning-inference-request-schema.json)
-
-### JSON Structure
-
-- [Model Structure](json-structure/machine-learning-model-structure.json)
-- [Inference Request Structure](json-structure/machine-learning-inference-request-structure.json)
-
-### JSON-LD
-
-- [Machine Learning Context](json-ld/machine-learning-context.jsonld)
-
-## Vocabulary
-
-- [Machine Learning Vocabulary](vocabulary/machine-learning-vocabulary.yaml) — Unified taxonomy mapping resources, actions, workflows, and personas across model training, serving, registries, and vector search.
-
-## Network
-
-This index references the following machine learning, MLOps, model serving, and vector search repositories:
-
-- [Amazon SageMaker](https://github.com/api-evangelist/amazon-sagemaker)
-- [Anyscale](https://github.com/api-evangelist/anyscale)
-- [Azure Databricks](https://github.com/api-evangelist/azure-databricks)
-- [Azure Machine Learning](https://github.com/api-evangelist/microsoft-azure-machine-learning)
-- [Baseten](https://github.com/api-evangelist/baseten)
-- [Chroma](https://github.com/api-evangelist/chroma)
-- [ClearML](https://github.com/api-evangelist/clearml)
-- [Comet](https://github.com/api-evangelist/comet-ml)
-- [DagsHub](https://github.com/api-evangelist/dagshub)
-- [Databricks](https://github.com/api-evangelist/databricks)
-- [Dataiku](https://github.com/api-evangelist/dataiku)
-- [DeepInfra](https://github.com/api-evangelist/deepinfra)
-- [Determined AI](https://github.com/api-evangelist/determined-ai)
-- [DVC](https://github.com/api-evangelist/dvc)
-- [Fireworks AI](https://github.com/api-evangelist/fireworks-ai)
-- [Google Vertex AI](https://github.com/api-evangelist/google-vertex-ai)
-- [Groq](https://github.com/api-evangelist/groq)
-- [Hugging Face](https://github.com/api-evangelist/hugging-face)
-- [Hyperbolic](https://github.com/api-evangelist/hyperbolic)
-- [Jina AI](https://github.com/api-evangelist/jina-ai)
-- [KServe](https://github.com/api-evangelist/kserve)
-- [Kubeflow](https://github.com/api-evangelist/kubeflow)
-- [Label Studio](https://github.com/api-evangelist/label-studio)
-- [Lepton AI](https://github.com/api-evangelist/lepton-ai)
-- [LiteLLM](https://github.com/api-evangelist/litellm)
-- [Marqo](https://github.com/api-evangelist/marqo)
-- [Microsoft Azure AI Foundry](https://github.com/api-evangelist/azure-ai-foundry)
-- [Milvus](https://github.com/api-evangelist/milvus)
-- [MLflow](https://github.com/api-evangelist/mlflow)
-- [Modal](https://github.com/api-evangelist/modal)
-- [Neptune.ai](https://github.com/api-evangelist/neptune-ai)
-- [Novita AI](https://github.com/api-evangelist/novita-ai)
-- [OpenPipe](https://github.com/api-evangelist/openpipe)
-- [Pinecone](https://github.com/api-evangelist/pinecone)
-- [Portkey](https://github.com/api-evangelist/portkey)
-- [Qdrant](https://github.com/api-evangelist/qdrant)
-- [Ray](https://github.com/api-evangelist/ray)
-- [Replicate](https://github.com/api-evangelist/replicate)
-- [SiliconFlow](https://github.com/api-evangelist/siliconflow)
-- [Together AI](https://github.com/api-evangelist/together-ai)
-- [TrueFoundry](https://github.com/api-evangelist/truefoundry)
-- [Typesense](https://github.com/api-evangelist/typesense)
-- [Vespa](https://github.com/api-evangelist/vespa)
-- [vLLM](https://github.com/api-evangelist/vllm)
-- [Weaviate](https://github.com/api-evangelist/weaviate)
-- [Weights & Biases](https://github.com/api-evangelist/weights-and-biases)
-- [ZenML](https://github.com/api-evangelist/zenml)
-- [Zilliz](https://github.com/api-evangelist/zilliz)
-
-## Maintainers
-
-**FN:** Kin Lane
-
-**Email:** kin@apievangelist.com
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/machine-learning/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
